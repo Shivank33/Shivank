@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class EmployeeSalary {
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter ID");
+        int id = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter Name");
+        String name = sc.nextLine();
+        System.out.println("Enter Basic Salary");
+        float basic = sc.nextFloat();
+        float HRA = (50* basic)/100;
+        float DA = (10* basic)/100;
+        float TA = (40* basic)/100;
+        float MA = (30* basic)/100;
+        float PF = (5* basic)/100;
+        float GS = basic + HRA + DA + TA + MA;
+        float TAX = (10* GS)/100;
+        float NS = GS - PF - TAX;
+        System.out.println("ID = " + id);
+        System.out.println("Name = " + name);
+        System.out.println("Basic Salary = " + basic);
+        System.out.println("HRA = " + HRA);
+        System.out.println("DA = " + DA);
+        System.out.println("TA = " + TA);
+        System.out.println("MA = " + MA);
+        System.out.println("PF = " + PF);
+        System.out.println("GS = " + GS);
+        System.out.println("TAX = " + TAX);
+        System.out.println("NS = " + NS);
+        sc.close();
+    }
+}
