@@ -1,2 +1,2 @@
-# Shivank
-Java 
+# JAVA
+Java language learning
